@@ -144,6 +144,22 @@
   flex: 1 1 180px;
 }
 
+.producto-detalle-favorito {
+  min-height: 46px;
+  padding: 10px 15px;
+  border: 1px solid rgba(23, 59, 37, 0.2);
+  border-radius: 10px;
+  background: #ffffff;
+  color: #173B25;
+  font-weight: 700;
+}
+
+.producto-detalle-favorito:hover,
+.producto-detalle-favorito.is-favorite {
+  border-color: #c44949;
+  color: #c44949;
+}
+
 .volver-catalogo {
   color: #173B25;
   font-weight: 700;

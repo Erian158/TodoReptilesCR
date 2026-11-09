@@ -27,6 +27,11 @@ const crearTarjetaProducto = (producto) => `
   <article class="catalogo-producto">
     <div class="catalogo-producto-imagen">
       <img src="${producto.imagen}" alt="${producto.nombre}">
+      <button type="button" class="producto-favorito-btn${window.TiendaStorage?.isFavorite(producto.id) ? ' is-favorite' : ''}"
+        data-toggle-favorite data-product-id="${producto.id}" aria-pressed="${window.TiendaStorage?.isFavorite(producto.id) || false}"
+        aria-label="${window.TiendaStorage?.isFavorite(producto.id) ? 'Quitar de favoritos' : 'Agregar a favoritos'}">
+        <i class="bi ${window.TiendaStorage?.isFavorite(producto.id) ? 'bi-heart-fill' : 'bi-heart'}"></i>
+      </button>
     </div>
 
     <div class="catalogo-producto-cuerpo">
@@ -37,7 +42,7 @@ const crearTarjetaProducto = (producto) => `
 
       <div class="catalogo-acciones">
         <a href="producto.html?id=${producto.id}" class="btn btn-detalle">Ver detalles</a>
-        <button type="button" class="btn btn-agregar-carrito">Agregar al carrito</button>
+        <button type="button" class="btn btn-agregar-carrito" data-add-cart data-product-id="${producto.id}">Agregar al carrito</button>
       </div>
     </div>
   </article>
@@ -179,6 +184,7 @@ const inicializarCatalogo = () => {
   document.getElementById('limpiar-filtros')?.addEventListener('click', limpiarFiltros);
 
   aplicarFiltros();
+  window.addEventListener('favoritos:actualizados', aplicarFiltros);
 };
 
 document.addEventListener('DOMContentLoaded', inicializarCatalogo);

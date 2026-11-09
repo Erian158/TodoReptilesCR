@@ -161,12 +161,35 @@
 }
 
 .catalogo-producto-imagen {
+  position: relative;
   height: 220px;
   background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 18px;
+}
+
+.producto-favorito-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(23, 59, 37, 0.14);
+  border-radius: 50%;
+  background: #ffffff;
+  color: #173B25;
+  font-size: 1.15rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.producto-favorito-btn:hover,
+.producto-favorito-btn.is-favorite {
+  color: #c44949;
 }
 
 .catalogo-producto-imagen img {
