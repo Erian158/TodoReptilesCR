@@ -5,3 +5,29 @@
     --color-texto: #252525;
     --color-texto-claro: #FFFFFF;
 }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+.btn {
+    transition: all 0.25s ease;
+}

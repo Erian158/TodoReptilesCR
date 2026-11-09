@@ -1,0 +1,136 @@
+const productos = [
+  {
+    id: 1,
+    nombre: 'Bombillo Zilla 150W',
+    marca: 'Zilla',
+    categoria: 'Iluminación y calefacción',
+    precio: 12500,
+    imagen: 'assets/productos/producto-1.jpg',
+    descripcion: 'Bombillo de alta potencia para reptil con luz solar de día, ideal para mantener un ambiente saludable y equilibrado.',
+    disponibilidad: 'Disponible en tienda. Confirmación de inventario pendiente.',
+    destacado: true
+  },
+  {
+    id: 2,
+    nombre: 'Zoo Med Repti Shelter Small',
+    marca: 'Zoo Med',
+    categoria: 'Terrarios',
+    precio: 11000,
+    imagen: 'assets/productos/producto-2.jpg',
+    descripcion: 'Refugio pequeño para reptiles, diseñado para brindar privacidad, seguridad y zonas de descanso confortables.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: true
+  },
+  {
+    id: 3,
+    nombre: 'Tenebrios, presentación de 200 unidades',
+    marca: 'ReptiZoo',
+    categoria: 'Alimentación',
+    precio: 3000,
+    imagen: 'assets/productos/producto-3.jpg',
+    descripcion: 'Presentación de tenebrios para reptiles y anfibios, excelente fuente de proteína y nutrición natural.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: true
+  },
+  {
+    id: 4,
+    nombre: 'Alimento Balance para perros, 1 kg',
+    marca: 'Balance',
+    categoria: 'Alimentación',
+    precio: 5500,
+    imagen: 'assets/productos/producto-4.jpg',
+    descripcion: 'Alimento balanceado para perros, con fórmula nutritiva para apoyar una dieta saludable y equilibrada.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: true
+  },
+  {
+    id: 5,
+    nombre: 'Exo Terra Compact Top 24W',
+    marca: 'Exo Terra',
+    categoria: 'Iluminación y calefacción',
+    precio: 24500,
+    imagen: 'assets/4.jpg',
+    descripcion: 'Sistema compacto de iluminación para terrarios, pensado para mejorar la temperatura y la calidad de luz del hábitat.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  },
+  {
+    id: 6,
+    nombre: 'Sustrato Exo Terra Forest Floor',
+    marca: 'Exo Terra',
+    categoria: 'Sustratos',
+    precio: 6800,
+    imagen: 'assets/4.jpg',
+    descripcion: 'Sustrato natural para terrarios tropicales, ideal para mantener humedad y recrear ambientes naturales.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  },
+  {
+    id: 7,
+    nombre: 'Terrario Exo Terra 45x45x60',
+    marca: 'Exo Terra',
+    categoria: 'Terrarios',
+    precio: 89000,
+    imagen: 'assets/gecko-carousel-1.jpg',
+    descripcion: 'Terrario de vidrio con diseño funcional para reptiles, adaptado para crear un ambiente visualmente atractivo y cómodo.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  },
+  {
+    id: 8,
+    nombre: 'Decoración tronco para terrario',
+    marca: 'ReptiZoo',
+    categoria: 'Decoración',
+    precio: 9300,
+    imagen: 'assets/4.jpg',
+    descripcion: 'Tronco decorativo para terrarios que aporta estructura visual y refugio natural para reptiles.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  },
+  {
+    id: 9,
+    nombre: 'Suplemento vitamínico Zoo Med',
+    marca: 'Zoo Med',
+    categoria: 'Suplementos',
+    precio: 7200,
+    imagen: 'assets/4.jpg',
+    descripcion: 'Suplemento nutricional pensado para reforzar la salud y el bienestar de reptiles con hábitos alimenticios variados.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  },
+  {
+    id: 10,
+    nombre: 'Comedero para perros y gatos',
+    marca: 'Pedigree',
+    categoria: 'Gatos y perros',
+    precio: 4800,
+    imagen: 'assets/4.jpg',
+    descripcion: 'Comedero resistente y funcional para mascotas domésticas, ideal para uso diario en hogares con varias especies.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  },
+  {
+    id: 11,
+    nombre: 'Alimento premium para gatos Purina',
+    marca: 'Purina',
+    categoria: 'Alimentación',
+    precio: 6100,
+    imagen: 'assets/4.jpg',
+    descripcion: 'Alimento para gatos con nutrientes balanceados para mantener un estilo de vida saludable.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  },
+  {
+    id: 12,
+    nombre: 'Fuente de agua para reptiles',
+    marca: 'Zoo Med',
+    categoria: 'Otros',
+    precio: 16400,
+    imagen: 'assets/4.jpg',
+    descripcion: 'Fuente de agua para reptiles diseñada para ofrecer hidratación constante y un ambiente más natural.',
+    disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
+    destacado: false
+  }
+];
+
+window.productos = productos;
