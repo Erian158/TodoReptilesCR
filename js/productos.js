@@ -8,7 +8,9 @@ const productos = [
     imagen: 'assets/productos/producto-1.jpg',
     descripcion: 'Bombillo de alta potencia para reptil con luz solar de día, ideal para mantener un ambiente saludable y equilibrado.',
     disponibilidad: 'Disponible en tienda. Confirmación de inventario pendiente.',
-    destacado: true
+    destacado: true,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   },
   {
     id: 2,
@@ -19,7 +21,9 @@ const productos = [
     imagen: 'assets/productos/producto-2.jpg',
     descripcion: 'Refugio pequeño para reptiles, diseñado para brindar privacidad, seguridad y zonas de descanso confortables.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: true
+    destacado: true,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   },
   {
     id: 3,
@@ -30,7 +34,9 @@ const productos = [
     imagen: 'assets/productos/producto-3.jpg',
     descripcion: 'Presentación de tenebrios para reptiles y anfibios, excelente fuente de proteína y nutrición natural.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: true
+    destacado: true,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'camaleón']
   },
   {
     id: 4,
@@ -41,7 +47,9 @@ const productos = [
     imagen: 'assets/productos/producto-4.jpg',
     descripcion: 'Alimento balanceado para perros, con fórmula nutritiva para apoyar una dieta saludable y equilibrada.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: true
+    destacado: true,
+    recommendationTypes: ['perro'],
+    recommendationSpecies: ['perro']
   },
   {
     id: 5,
@@ -52,7 +60,9 @@ const productos = [
     imagen: 'assets/4.jpg',
     descripcion: 'Sistema compacto de iluminación para terrarios, pensado para mejorar la temperatura y la calidad de luz del hábitat.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   },
   {
     id: 6,
@@ -63,7 +73,9 @@ const productos = [
     imagen: 'assets/4.jpg',
     descripcion: 'Sustrato natural para terrarios tropicales, ideal para mantener humedad y recrear ambientes naturales.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   },
   {
     id: 7,
@@ -74,7 +86,9 @@ const productos = [
     imagen: 'assets/gecko-carousel-1.jpg',
     descripcion: 'Terrario de vidrio con diseño funcional para reptiles, adaptado para crear un ambiente visualmente atractivo y cómodo.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   },
   {
     id: 8,
@@ -85,7 +99,9 @@ const productos = [
     imagen: 'assets/4.jpg',
     descripcion: 'Tronco decorativo para terrarios que aporta estructura visual y refugio natural para reptiles.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   },
   {
     id: 9,
@@ -96,7 +112,9 @@ const productos = [
     imagen: 'assets/4.jpg',
     descripcion: 'Suplemento nutricional pensado para reforzar la salud y el bienestar de reptiles con hábitos alimenticios variados.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   },
   {
     id: 10,
@@ -107,7 +125,9 @@ const productos = [
     imagen: 'assets/4.jpg',
     descripcion: 'Comedero resistente y funcional para mascotas domésticas, ideal para uso diario en hogares con varias especies.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['perro', 'gato'],
+    recommendationSpecies: ['perro', 'gato']
   },
   {
     id: 11,
@@ -118,7 +138,9 @@ const productos = [
     imagen: 'assets/4.jpg',
     descripcion: 'Alimento para gatos con nutrientes balanceados para mantener un estilo de vida saludable.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['gato'],
+    recommendationSpecies: ['gato']
   },
   {
     id: 12,
@@ -129,7 +151,9 @@ const productos = [
     imagen: 'assets/4.jpg',
     descripcion: 'Fuente de agua para reptiles diseñada para ofrecer hidratación constante y un ambiente más natural.',
     disponibilidad: 'Demostrativo: disponibilidad pendiente de confirmar.',
-    destacado: false
+    destacado: false,
+    recommendationTypes: ['reptil'],
+    recommendationSpecies: ['gecko', 'pogona', 'serpiente', 'camaleón']
   }
 ];
 
