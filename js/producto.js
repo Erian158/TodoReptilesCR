@@ -85,7 +85,12 @@ const renderizarDetalle = () => {
           <input id="cantidad-producto" type="number" value="1" min="1" max="10" readonly>
           <button type="button" aria-label="Sumar cantidad" data-accion="sumar">+</button>
         </div>
-        <button type="button" class="btn btn-agregar-carrito">Agregar al carrito</button>
+        <button type="button" class="btn btn-agregar-carrito" data-add-cart data-product-id="${producto.id}" data-quantity-input="cantidad-producto">Agregar al carrito</button>
+        <button type="button" class="producto-detalle-favorito${window.TiendaStorage?.isFavorite(producto.id) ? ' is-favorite' : ''}"
+          data-toggle-favorite data-product-id="${producto.id}" aria-pressed="${window.TiendaStorage?.isFavorite(producto.id) || false}"
+          aria-label="${window.TiendaStorage?.isFavorite(producto.id) ? 'Quitar de favoritos' : 'Agregar a favoritos'}">
+          <i class="bi ${window.TiendaStorage?.isFavorite(producto.id) ? 'bi-heart-fill' : 'bi-heart'}"></i> Favoritos
+        </button>
       </div>
 
       <a href="catalogo.html" class="volver-catalogo">← Volver al catálogo</a>
