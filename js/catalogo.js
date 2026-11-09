@@ -113,6 +113,11 @@ const llenarCategorias = () => {
 
   const params = new URLSearchParams(window.location.search);
   const categoriaSeleccionada = params.get('categoria');
+  const busquedaInicial = params.get('buscar');
+
+  if (busquedaInicial) {
+    document.getElementById('busqueda-catalogo').value = busquedaInicial.slice(0, 100);
+  }
 
   if (categoriaSeleccionada) {
     const categoriaExistente = categoriasCatalogo.find((categoria) => normalizarTexto(categoria) === normalizarTexto(categoriaSeleccionada));

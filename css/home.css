@@ -830,8 +830,15 @@ html {
     color: #CCCCCC;
 }
 
+@media (max-width: 768px) {
+    .footer-contenido {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        padding-bottom: 28px;
+    }
 
-
-
-
-
+    .footer-columna {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+}
