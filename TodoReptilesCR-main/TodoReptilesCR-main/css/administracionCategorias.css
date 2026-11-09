@@ -1,0 +1,415 @@
+
+.admin-main {
+    padding-top: 45px;
+    padding-bottom: 65px;
+}
+
+/* Encabezado */
+
+.admin-header-label {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-header-label i {
+    color: #F28C28;
+    font-size: 21px;
+}
+
+/* Título */
+
+.admin-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.admin-etiqueta {
+    color: #F28C28;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.admin-titulo h1 {
+    color: #173B25;
+    font-size: 34px;
+    font-weight: 750;
+    margin-bottom: 10px;
+}
+
+.admin-titulo p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+.btn-naranja {
+    background: #F28C28;
+    color: white;
+    border: 1px solid #F28C28;
+    border-radius: 9px;
+    padding: 11px 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.btn-naranja:hover {
+    background: #d97316;
+    border-color: #d97316;
+    color: white;
+}
+
+.btn-naranja i {
+    margin-right: 5px;
+}
+
+/* Aviso */
+
+.aviso-demo {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 16px 20px;
+    margin-bottom: 25px;
+}
+
+.aviso-demo i {
+    font-size: 20px;
+}
+
+/* Estadísticas */
+
+.admin-estadistica {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #ffffff;
+    border: 1px solid #e9ece7;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+    height: 100%;
+}
+
+.estadistica-icono {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: rgba(23, 59, 37, 0.09);
+    color: #173B25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.estadistica-icono i {
+    font-size: 25px;
+}
+
+.admin-estadistica p {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #777;
+}
+
+.admin-estadistica h2 {
+    margin: 0;
+    font-weight: 750;
+    font-size: 28px;
+    color: #173B25;
+}
+
+/* Panel */
+
+.admin-panel {
+    background: white;
+    border: 1px solid #e8ece8;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.admin-panel-header {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admin-panel-header h2 {
+    color: #173B25;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.admin-panel-header p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Buscador */
+
+.admin-buscador {
+    position: relative;
+    width: 300px;
+    max-width: 100%;
+}
+
+.admin-buscador i {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.admin-buscador input {
+    padding: 11px 15px 11px 42px;
+    border-radius: 9px;
+    border: 1px solid #ddd;
+}
+
+.admin-buscador input:focus,
+.admin-modal .form-control:focus {
+    border-color: #F28C28;
+    box-shadow: 0 0 0 3px rgba(242, 140, 40, 0.15);
+}
+
+/* Tabla */
+
+.admin-tabla {
+    margin-bottom: 0;
+    min-width: 650px;
+}
+
+.admin-tabla thead th {
+    background: #173B25;
+    color: white;
+    padding: 17px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-tabla tbody td {
+    padding: 18px 20px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #444;
+}
+
+.admin-tabla tbody tr:hover td {
+    background: #f7faf6;
+}
+
+.categoria-nombre {
+    font-weight: 700;
+    color: #173B25;
+}
+
+.categoria-descripcion {
+    color: #777;
+    line-height: 1.6;
+}
+
+.categoria-cantidad {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #eef5ef;
+    color: #173B25;
+    border-radius: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Acciones */
+
+.admin-acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-accion {
+    border-radius: 8px;
+    padding: 7px 11px;
+    border: 1px solid #e2e5e2;
+    background: white;
+    transition: 0.2s;
+}
+
+.btn-editar {
+    color: #173B25;
+}
+
+.btn-editar:hover {
+    background: #173B25;
+    color: white;
+}
+
+.btn-eliminar {
+    color: #cc4545;
+}
+
+.btn-eliminar:hover {
+    background: #cc4545;
+    color: white;
+}
+
+
+
+.admin-estado-vacio {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.admin-estado-vacio > i {
+    display: block;
+    font-size: 45px;
+    color: #F28C28;
+    margin-bottom: 15px;
+}
+
+.admin-estado-vacio h3 {
+    color: #173B25;
+    font-size: 21px;
+}
+
+.admin-estado-vacio p {
+    color: #777;
+}
+
+
+
+.admin-panel-footer {
+    padding: 16px 25px;
+    color: #777;
+    background: #fafbf9;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+}
+
+
+.admin-modal {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.admin-modal .modal-header {
+    background: #173B25;
+    color: white;
+    padding: 20px 25px;
+}
+
+.admin-modal .modal-title {
+    font-weight: 700;
+}
+
+.admin-modal .btn-close {
+    filter: invert(1) grayscale(100%);
+}
+
+.admin-modal .modal-body {
+    padding: 25px;
+}
+
+.admin-modal .modal-footer {
+    padding: 15px 25px;
+}
+
+.admin-modal .form-label {
+    color: #173B25;
+    font-weight: 600;
+}
+
+.admin-modal .form-control {
+    border-radius: 8px;
+}
+
+.admin-ayuda {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+
+.admin-volver {
+    margin-top: 25px;
+}
+
+.admin-volver a {
+    color: #173B25;
+    font-weight: 600;
+}
+
+.admin-volver a:hover {
+    color: #F28C28;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .admin-main {
+        padding-top: 30px;
+    }
+
+    .admin-titulo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-titulo h1 {
+        font-size: 27px;
+    }
+
+    .admin-panel-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-buscador {
+        width: 100%;
+    }
+
+    .admin-header-label {
+        font-size: 12px;
+    }
+
+    .admin-estadistica {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .admin-titulo h1 {
+        font-size: 24px;
+    }
+
+    .admin-panel-header {
+        padding: 20px;
+    }
+
+    .admin-header-label {
+        display: none;
+    }
+
+    .btn-naranja {
+        width: 100%;
+    }
+}

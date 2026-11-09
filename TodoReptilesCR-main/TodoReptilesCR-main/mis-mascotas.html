@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis mascotas | TodoReptilesCR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/mascotas.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand"><img src="assets/logo.png" alt="Logo TodoReptilesCR"><span class="brand-name">TodoReptiles<span>CR</span></span></a>
+                <form class="header-search" role="search" action="catalogo.html"><i class="bi bi-search"></i><input type="search" name="buscar" placeholder="Buscar productos..." aria-label="Buscar productos"></form>
+                <div class="header-actions"><a href="login.html" aria-label="Mi cuenta"><i class="bi bi-person"></i></a><a href="#" aria-label="Carrito"><i class="bi bi-cart3"></i></a></div>
+            </div>
+        </div>
+        <nav class="main-navbar" aria-label="Navegación principal"><div class="container"><ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html#categorias">Categorías</a></li>
+            <li class="nav-item"><a class="nav-link active" href="mis-mascotas.html">Mis mascotas</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+        </ul></div></nav>
+    </header>
+    <main class="mascotas-page">
+        <div class="container">
+            <section class="mascotas-hero">
+                <div><p class="mascotas-eyebrow">Cuidado personalizado</p><h1>Mis mascotas</h1><p>Registra sus datos y encuentra productos relacionados con su tipo o especie.</p></div>
+                <a href="#formulario-mascota" class="btn-mascotas-primary"><i class="bi bi-plus-lg"></i> Agregar mascota</a>
+            </section>
+            <div class="aviso-backend" role="status"><i class="bi bi-info-circle"></i><span>Datos de demostración almacenados únicamente en este navegador; no se asocian a una cuenta y pueden perderse si borras sus datos.</span></div>
+            <section class="mascotas-listado-section">
+                <div class="mascotas-section-heading"><div><h2>Tus compañeras y compañeros</h2><p id="mascotas-contador">0 mascotas registradas</p></div></div>
+                <div id="mascotas-listado" class="mascotas-grid"></div>
+                <div id="mascotas-vacio" class="mascotas-vacio" hidden><span class="mascotas-vacio-icon"><i class="bi bi-heart"></i></span><h3>Aún no has registrado mascotas</h3><p>Agrega los datos de tu mascota para organizar su perfil y ver productos que podrían interesarte.</p><a href="#formulario-mascota" class="btn-mascotas-primary">Registrar primera mascota</a></div>
+            </section>
+            <section class="mascota-form-panel" id="formulario-mascota">
+                <div class="mascotas-section-heading"><div><p class="mascotas-eyebrow">Perfil local</p><h2 id="formulario-titulo">Registrar mascota</h2><p>Los datos se guardan de forma local; la foto solo tendrá una vista previa temporal.</p></div></div>
+                <form id="mascota-form" novalidate>
+                    <input type="hidden" id="mascota-id">
+                    <div class="mascota-form-grid">
+                        <div class="mascota-campo"><label for="mascota-nombre">Nombre</label><input id="mascota-nombre" name="nombre" type="text" maxlength="50" required><span class="campo-error" aria-live="polite"></span></div>
+                        <div class="mascota-campo"><label for="mascota-tipo">Tipo de mascota</label><select id="mascota-tipo" name="tipo" required><option value="">Selecciona un tipo</option><option value="reptil">Reptil</option><option value="perro">Perro</option><option value="gato">Gato</option><option value="otro">Otro</option></select><span class="campo-error" aria-live="polite"></span></div>
+                        <div class="mascota-campo"><label for="mascota-especie">Especie</label><input id="mascota-especie" name="especie" type="text" maxlength="60" list="especies-sugeridas" placeholder="Ej. gecko leopardo" required><datalist id="especies-sugeridas"><option value="Gecko leopardo"><option value="Gecko crestado"><option value="Pogona"><option value="Serpiente"><option value="Camaleón"><option value="Perro"><option value="Gato"></datalist><span class="campo-error" aria-live="polite"></span></div>
+                        <div class="mascota-campo"><label for="mascota-edad">Edad aproximada</label><input id="mascota-edad" name="edad" type="text" maxlength="30" placeholder="Ej. 2 años"><span class="campo-error" aria-live="polite"></span></div>
+                        <div class="mascota-campo mascota-campo-completo"><label for="mascota-foto">Fotografía (opcional)</label><input id="mascota-foto" name="foto" type="file" accept="image/jpeg,image/png,image/webp"><span class="campo-ayuda">Solo se muestra una vista previa temporal y no se guarda en el navegador.</span><span id="mascota-foto-error" class="campo-error" aria-live="polite"></span><img id="mascota-foto-preview" class="mascota-foto-preview" alt="Vista previa de la fotografía" hidden></div>
+                        <div class="mascota-campo mascota-campo-completo"><label for="mascota-observaciones">Observaciones o necesidades especiales</label><textarea id="mascota-observaciones" name="observaciones" rows="4" maxlength="500" placeholder="Anota cuidados que quieras recordar (máximo 500 caracteres)"></textarea><span class="campo-error" aria-live="polite"></span></div>
+                    </div>
+                    <p id="mascota-form-mensaje" class="form-mensaje" role="status" aria-live="polite"></p>
+                    <div class="mascota-form-actions"><button type="submit" class="btn-mascotas-primary">Guardar mascota</button><button type="button" id="cancelar-edicion" class="btn-mascotas-secondary" hidden>Cancelar edición</button></div>
+                </form>
+            </section>
+            <section class="recomendaciones-section" aria-labelledby="recomendaciones-titulo">
+                <div class="mascotas-section-heading"><div><p class="mascotas-eyebrow">Según el perfil seleccionado</p><h2 id="recomendaciones-titulo">Productos relacionados</h2><p>Las sugerencias se basan en etiquetas del catálogo compartido.</p></div><label class="mascota-select-label" for="recomendaciones-mascota">Mascota<select id="recomendaciones-mascota"><option value="">Selecciona una mascota</option></select></label></div>
+                <div id="recomendaciones-productos" class="recomendaciones-grid"></div>
+                <p id="recomendaciones-vacias" class="recomendaciones-vacias" hidden>Registra o selecciona una mascota para ver recomendaciones relacionadas.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-contenido">
+        <div class="footer-columna"><h3>TodoReptilesCR</h3><p>Especialistas en productos y accesorios para reptiles. Brindamos calidad y atención personalizada para el bienestar de tus mascotas.</p></div>
+        <div class="footer-columna"><h3>Enlaces rápidos</h3><ul><li><a href="index.html">Inicio</a></li><li><a href="catalogo.html">Catálogo</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></div>
+        <div class="footer-columna"><h3>Contáctanos</h3><p><i class="bi bi-whatsapp"></i> <a href="https://wa.me/50672304366" target="_blank" rel="noopener noreferrer">7230-4366</a></p><p><i class="bi bi-geo-alt"></i> Costa Rica</p></div>
+    </div><div class="footer-inferior"><p>&copy; 2026 TodoReptilesCR. Todos los derechos reservados.</p></div></div></footer>
+    <a href="https://wa.me/50672304366?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20productos" class="whatsapp-flotante" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/mascotas.js"></script>
+</body>
+</html>
